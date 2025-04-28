@@ -1,0 +1,35 @@
+body {
+	font-family: 'Inter', sans-serif;
+	background-color: rgba(0, 0, 0, 0.842);
+}
+
+h1 {
+	color: #000000;
+	text-align: left;
+	margin-top: 20px;
+
+
+}
+
+p {
+	color: #ffffff;
+	text-align: justify;
+	margin-top: 20px;
+	font-weight: 200;
+	font-size: 1.2rem;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+
+th {
+	margin-right: 50px;
+}
+
+
+
