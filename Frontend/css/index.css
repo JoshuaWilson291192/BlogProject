@@ -1,6 +1,15 @@
 /* General Styles */
 body {
 	font-family: 'Inter', sans-serif;
+	background-color:hsla(33,0%,0%,1);
+	background-image:
+	radial-gradient(at 98% 2%, hsla(274,91%,19%,0.82) 0px, transparent 50%),
+	radial-gradient(at 6% 9%, hsla(265,90%,14%,1) 0px, transparent 50%),
+	radial-gradient(at 89% 74%, hsla(275,100%,11%,1) 0px, transparent 50%),
+	radial-gradient(at 1% 98%, hsla(277,96%,22%,1) 0px, transparent 50%),
+	radial-gradient(at 97% 97%, hsla(256,96%,21%,1) 0px, transparent 50%),
+	radial-gradient(at 55% 51%, hsla(265,53%,17%,1) 0px, transparent 50%);
+	overflow-x: hidden;
 }
 
 h1 {
@@ -48,19 +57,7 @@ p {
 	height: 100vh;
 	margin: 0;
 	padding: 20px;
-	background: linear-gradient(#000000, #312064);
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-#intro-section {
-	height: 100vh;
-	margin: 0;
-	padding: 20px;
-	background: linear-gradient(#000000, #312064);
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	background: transparent;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -70,8 +67,7 @@ p {
 	height: 100vh;
 	margin: 0;
 	padding: 20px;
-	background: linear-gradient(#000000, #312064);
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0.3);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -81,8 +77,7 @@ p {
 	height: 100vh;
 	margin: 0;
 	padding: 20px;
-	background: linear-gradient(#000000, #312064);
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	background: transparent;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -92,8 +87,7 @@ p {
 	height: 100vh;
 	margin: 0;
 	padding: 20px;
-	background: linear-gradient(#000000, #312064);
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	background: transparent;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -103,8 +97,7 @@ p {
 	height: 100vh;
 	margin: 0;
 	padding: 20px;
-	background: linear-gradient(#000000, #312064);
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	background: transparent;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -120,7 +113,7 @@ p {
 	font-family: 'Inter', sans-serif;
 	font-size: 14px;
 	font-weight: 700;
-	line-height: 24px;
+	line-height: 15px;
 	opacity: 1;
 	outline: 0 solid transparent;
 	padding: 8px 18px;
@@ -194,10 +187,21 @@ p {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: transparent;
+	background-color: rgba(0, 0, 0, 0.0);
 	z-index: 1000;
+	
 }
 
+.navbar-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 20px;
+}
+.navbar.scrolled {
+	background-color: rgba(0, 0, 0, 0.5);
+}
 
 .nav-item {
 	text-decoration: none;
@@ -249,3 +253,31 @@ p {
 		padding: 20px;
 	}
 }
+
+
+
+
+
+
+.custom-shape-divider-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+}
+
+.custom-shape-divider-bottom .shape-fill {
+    fill: black;
+	opacity: 0.3;
+}
+
