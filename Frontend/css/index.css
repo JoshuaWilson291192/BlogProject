@@ -1,4 +1,14 @@
 /* General Styles */
+html {
+	scroll-snap-type: y proximity;
+}
+
+section {
+	height: 100vh;
+	scroll-snap-align: start;
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Inter', sans-serif;
 	background-color:hsla(33,0%,0%,1);
@@ -17,13 +27,29 @@ h1 {
 	font-size: 24px;
 	color: #ffffff;
 }
+h2 {
+	font-family: 'Inter', sans-serif;
+	font-size: 20px;
+	color: #ffffff;
+}
+h3 {
+	font-family: 'Inter', sans-serif;
+	font-size: 18px;
+	color: #ffffff;
+}
+h4 {
+	font-family: 'Inter', sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+}
+
 
 p {
 	color: #ffffff;
 	text-align: justify;
 	margin-top: 20px;
 	font-weight: 200;
-	font-size: 1.2rem;
+	font-size: 1.0rem;
 }
 
 /* Gradient Text Styles */
@@ -124,10 +150,9 @@ p {
 
 /* Tech Table Styles */
 .tech-table {
-	max-width: 900px;
+	max-width: 600px;
 	margin: 0 auto;
-	border-radius: 100px;
-	box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+	border-radius: 0;
 	overflow: hidden;
 }
 
@@ -167,14 +192,15 @@ p {
 }
 
 .icon-card img {
-	width: 48px;
-	height: 48px;
+	width: 40px;
+	height: 40px;
 	margin-bottom: 10px;
 }
 
 .icon-card p {
 	margin: 0;
 	font-weight: 100;
+	font-size: 0.9rem;
 	color: #ffffff;
 }
 
@@ -281,3 +307,73 @@ p {
 	opacity: 0.3;
 }
 
+/* Radial Wheel layout */
+.radial-wheel {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.1); /* Optional background for the wheel */
+  }
+  
+  .wheel-icon {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	transform-origin: center;
+	transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .wheel-icon img {
+	width: 100%;
+	height: 100%;
+	transition: transform 0.3s ease;
+  }
+  
+  .wheel-icon:hover img {
+	transform: scale(1.2); /* Enlarge the icon on hover */
+  }
+  
+  .wheel-label {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 1.2rem;
+	color: #ffffff;
+	font-weight: bold;
+  }
+  
+  /* Position icons in a circular layout for 10 items */
+  .wheel-icon:nth-child(1) {
+	transform: rotate(0deg) translate(120px) rotate(0deg);
+  }
+  .wheel-icon:nth-child(2) {
+	transform: rotate(36deg) translate(120px) rotate(-36deg);
+  }
+  .wheel-icon:nth-child(3) {
+	transform: rotate(72deg) translate(120px) rotate(-72deg);
+  }
+  .wheel-icon:nth-child(4) {
+	transform: rotate(108deg) translate(120px) rotate(-108deg);
+  }
+  .wheel-icon:nth-child(5) {
+	transform: rotate(144deg) translate(120px) rotate(-144deg);
+  }
+  .wheel-icon:nth-child(6) {
+	transform: rotate(180deg) translate(120px) rotate(-180deg);
+  }
+  .wheel-icon:nth-child(7) {
+	transform: rotate(216deg) translate(120px) rotate(-216deg);
+  }
+  .wheel-icon:nth-child(8) {
+	transform: rotate(252deg) translate(120px) rotate(-252deg);
+  }
+  .wheel-icon:nth-child(9) {
+	transform: rotate(288deg) translate(120px) rotate(-288deg);
+  }
+  .wheel-icon:nth-child(10) {
+	transform: rotate(324deg) translate(120px) rotate(-324deg);
+  }
